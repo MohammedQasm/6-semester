@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.3.001">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.3.001" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="10.3.001" expanded="true" height="68" name="Read CSV" width="90" x="313" y="493">
+        <parameter key="csv_file" value="C:\Users\zhewar\Desktop\fold1.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="attribute_1.true.real.attribute"/>
+          <parameter key="1" value="attribute_2.true.real.attribute"/>
+          <parameter key="2" value="attribute_3.true.real.attribute"/>
+          <parameter key="3" value="attribute_4.true.real.attribute"/>
+          <parameter key="4" value="attribute_5.true.real.attribute"/>
+          <parameter key="5" value="attribute_6.true.real.attribute"/>
+          <parameter key="6" value="attribute_7.true.real.attribute"/>
+          <parameter key="7" value="attribute_8.true.real.attribute"/>
+          <parameter key="8" value="attribute_9.true.real.attribute"/>
+          <parameter key="9" value="attribute_10.true.real.attribute"/>
+          <parameter key="10" value="attribute_11.true.real.attribute"/>
+          <parameter key="11" value="attribute_12.true.real.attribute"/>
+          <parameter key="12" value="attribute_13.true.real.attribute"/>
+          <parameter key="13" value="attribute_14.true.real.attribute"/>
+          <parameter key="14" value="attribute_15.true.real.attribute"/>
+          <parameter key="15" value="attribute_16.true.real.attribute"/>
+          <parameter key="16" value="attribute_17.true.real.attribute"/>
+          <parameter key="17" value="attribute_18.true.real.attribute"/>
+          <parameter key="18" value="attribute_19.true.real.attribute"/>
+          <parameter key="19" value="attribute_20.true.real.attribute"/>
+          <parameter key="20" value="attribute_21.true.real.attribute"/>
+          <parameter key="21" value="attribute_22.true.real.attribute"/>
+          <parameter key="22" value="attribute_23.true.real.attribute"/>
+          <parameter key="23" value="attribute_24.true.real.attribute"/>
+          <parameter key="24" value="attribute_25.true.real.attribute"/>
+          <parameter key="25" value="attribute_26.true.real.attribute"/>
+          <parameter key="26" value="attribute_27.true.real.attribute"/>
+          <parameter key="27" value="attribute_28.true.real.attribute"/>
+          <parameter key="28" value="attribute_29.true.real.attribute"/>
+          <parameter key="29" value="attribute_30.true.real.attribute"/>
+          <parameter key="30" value="attribute_31.true.real.attribute"/>
+          <parameter key="31" value="attribute_32.true.real.attribute"/>
+          <parameter key="32" value="attribute_33.true.real.attribute"/>
+          <parameter key="33" value="attribute_34.true.real.attribute"/>
+          <parameter key="34" value="attribute_35.true.real.attribute"/>
+          <parameter key="35" value="attribute_36.true.real.attribute"/>
+          <parameter key="36" value="attribute_37.true.real.attribute"/>
+          <parameter key="37" value="attribute_38.true.real.attribute"/>
+          <parameter key="38" value="attribute_39.true.real.attribute"/>
+          <parameter key="39" value="attribute_40.true.real.attribute"/>
+          <parameter key="40" value="attribute_41.true.real.attribute"/>
+          <parameter key="41" value="attribute_42.true.real.attribute"/>
+          <parameter key="42" value="attribute_43.true.real.attribute"/>
+          <parameter key="43" value="attribute_44.true.real.attribute"/>
+          <parameter key="44" value="attribute_45.true.real.attribute"/>
+          <parameter key="45" value="attribute_46.true.real.attribute"/>
+          <parameter key="46" value="attribute_47.true.real.attribute"/>
+          <parameter key="47" value="attribute_48.true.real.attribute"/>
+          <parameter key="48" value="attribute_49.true.real.attribute"/>
+          <parameter key="49" value="attribute_50.true.real.attribute"/>
+          <parameter key="50" value="attribute_51.true.real.attribute"/>
+          <parameter key="51" value="attribute_52.true.real.attribute"/>
+          <parameter key="52" value="attribute_53.true.real.attribute"/>
+          <parameter key="53" value="attribute_54.true.real.attribute"/>
+          <parameter key="54" value="attribute_55.true.real.attribute"/>
+          <parameter key="55" value="attribute_56.true.real.attribute"/>
+          <parameter key="56" value="attribute_57.true.real.attribute"/>
+          <parameter key="57" value="attribute_58.true.real.attribute"/>
+          <parameter key="58" value="attribute_59.true.real.attribute"/>
+          <parameter key="59" value="attribute_60.true.real.attribute"/>
+          <parameter key="60" value="class.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:set_role" compatibility="10.3.001" expanded="true" height="82" name="Set Role (2)" width="90" x="514" y="391">
+        <list key="set_roles">
+          <parameter key="class" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.3.001" expanded="true" height="68" name="Read CSV (2)" width="90" x="45" y="136">
+        <parameter key="csv_file" value="C:\Users\zhewar\Desktop\fold2.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="attribute_1.true.real.attribute"/>
+          <parameter key="1" value="attribute_2.true.real.attribute"/>
+          <parameter key="2" value="attribute_3.true.real.attribute"/>
+          <parameter key="3" value="attribute_4.true.real.attribute"/>
+          <parameter key="4" value="attribute_5.true.real.attribute"/>
+          <parameter key="5" value="attribute_6.true.real.attribute"/>
+          <parameter key="6" value="attribute_7.true.real.attribute"/>
+          <parameter key="7" value="attribute_8.true.real.attribute"/>
+          <parameter key="8" value="attribute_9.true.real.attribute"/>
+          <parameter key="9" value="attribute_10.true.real.attribute"/>
+          <parameter key="10" value="attribute_11.true.real.attribute"/>
+          <parameter key="11" value="attribute_12.true.real.attribute"/>
+          <parameter key="12" value="attribute_13.true.real.attribute"/>
+          <parameter key="13" value="attribute_14.true.real.attribute"/>
+          <parameter key="14" value="attribute_15.true.real.attribute"/>
+          <parameter key="15" value="attribute_16.true.real.attribute"/>
+          <parameter key="16" value="attribute_17.true.real.attribute"/>
+          <parameter key="17" value="attribute_18.true.real.attribute"/>
+          <parameter key="18" value="attribute_19.true.real.attribute"/>
+          <parameter key="19" value="attribute_20.true.real.attribute"/>
+          <parameter key="20" value="attribute_21.true.real.attribute"/>
+          <parameter key="21" value="attribute_22.true.real.attribute"/>
+          <parameter key="22" value="attribute_23.true.real.attribute"/>
+          <parameter key="23" value="attribute_24.true.real.attribute"/>
+          <parameter key="24" value="attribute_25.true.real.attribute"/>
+          <parameter key="25" value="attribute_26.true.real.attribute"/>
+          <parameter key="26" value="attribute_27.true.real.attribute"/>
+          <parameter key="27" value="attribute_28.true.real.attribute"/>
+          <parameter key="28" value="attribute_29.true.real.attribute"/>
+          <parameter key="29" value="attribute_30.true.real.attribute"/>
+          <parameter key="30" value="attribute_31.true.real.attribute"/>
+          <parameter key="31" value="attribute_32.true.real.attribute"/>
+          <parameter key="32" value="attribute_33.true.real.attribute"/>
+          <parameter key="33" value="attribute_34.true.real.attribute"/>
+          <parameter key="34" value="attribute_35.true.real.attribute"/>
+          <parameter key="35" value="attribute_36.true.real.attribute"/>
+          <parameter key="36" value="attribute_37.true.real.attribute"/>
+          <parameter key="37" value="attribute_38.true.real.attribute"/>
+          <parameter key="38" value="attribute_39.true.real.attribute"/>
+          <parameter key="39" value="attribute_40.true.real.attribute"/>
+          <parameter key="40" value="attribute_41.true.real.attribute"/>
+          <parameter key="41" value="attribute_42.true.real.attribute"/>
+          <parameter key="42" value="attribute_43.true.real.attribute"/>
+          <parameter key="43" value="attribute_44.true.real.attribute"/>
+          <parameter key="44" value="attribute_45.true.real.attribute"/>
+          <parameter key="45" value="attribute_46.true.real.attribute"/>
+          <parameter key="46" value="attribute_47.true.real.attribute"/>
+          <parameter key="47" value="attribute_48.true.real.attribute"/>
+          <parameter key="48" value="attribute_49.true.real.attribute"/>
+          <parameter key="49" value="attribute_50.true.real.attribute"/>
+          <parameter key="50" value="attribute_51.true.real.attribute"/>
+          <parameter key="51" value="attribute_52.true.real.attribute"/>
+          <parameter key="52" value="attribute_53.true.real.attribute"/>
+          <parameter key="53" value="attribute_54.true.real.attribute"/>
+          <parameter key="54" value="attribute_55.true.real.attribute"/>
+          <parameter key="55" value="attribute_56.true.real.attribute"/>
+          <parameter key="56" value="attribute_57.true.real.attribute"/>
+          <parameter key="57" value="attribute_58.true.real.attribute"/>
+          <parameter key="58" value="attribute_59.true.real.attribute"/>
+          <parameter key="59" value="attribute_60.true.real.attribute"/>
+          <parameter key="60" value="class.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.3.001" expanded="true" height="68" name="Read CSV (3)" width="90" x="45" y="238">
+        <parameter key="csv_file" value="C:\Users\zhewar\Desktop\fold3.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="attribute_1.true.real.attribute"/>
+          <parameter key="1" value="attribute_2.true.real.attribute"/>
+          <parameter key="2" value="attribute_3.true.real.attribute"/>
+          <parameter key="3" value="attribute_4.true.real.attribute"/>
+          <parameter key="4" value="attribute_5.true.real.attribute"/>
+          <parameter key="5" value="attribute_6.true.real.attribute"/>
+          <parameter key="6" value="attribute_7.true.real.attribute"/>
+          <parameter key="7" value="attribute_8.true.real.attribute"/>
+          <parameter key="8" value="attribute_9.true.real.attribute"/>
+          <parameter key="9" value="attribute_10.true.real.attribute"/>
+          <parameter key="10" value="attribute_11.true.real.attribute"/>
+          <parameter key="11" value="attribute_12.true.real.attribute"/>
+          <parameter key="12" value="attribute_13.true.real.attribute"/>
+          <parameter key="13" value="attribute_14.true.real.attribute"/>
+          <parameter key="14" value="attribute_15.true.real.attribute"/>
+          <parameter key="15" value="attribute_16.true.real.attribute"/>
+          <parameter key="16" value="attribute_17.true.real.attribute"/>
+          <parameter key="17" value="attribute_18.true.real.attribute"/>
+          <parameter key="18" value="attribute_19.true.real.attribute"/>
+          <parameter key="19" value="attribute_20.true.real.attribute"/>
+          <parameter key="20" value="attribute_21.true.real.attribute"/>
+          <parameter key="21" value="attribute_22.true.real.attribute"/>
+          <parameter key="22" value="attribute_23.true.real.attribute"/>
+          <parameter key="23" value="attribute_24.true.real.attribute"/>
+          <parameter key="24" value="attribute_25.true.real.attribute"/>
+          <parameter key="25" value="attribute_26.true.real.attribute"/>
+          <parameter key="26" value="attribute_27.true.real.attribute"/>
+          <parameter key="27" value="attribute_28.true.real.attribute"/>
+          <parameter key="28" value="attribute_29.true.real.attribute"/>
+          <parameter key="29" value="attribute_30.true.real.attribute"/>
+          <parameter key="30" value="attribute_31.true.real.attribute"/>
+          <parameter key="31" value="attribute_32.true.real.attribute"/>
+          <parameter key="32" value="attribute_33.true.real.attribute"/>
+          <parameter key="33" value="attribute_34.true.real.attribute"/>
+          <parameter key="34" value="attribute_35.true.real.attribute"/>
+          <parameter key="35" value="attribute_36.true.real.attribute"/>
+          <parameter key="36" value="attribute_37.true.real.attribute"/>
+          <parameter key="37" value="attribute_38.true.real.attribute"/>
+          <parameter key="38" value="attribute_39.true.real.attribute"/>
+          <parameter key="39" value="attribute_40.true.real.attribute"/>
+          <parameter key="40" value="attribute_41.true.real.attribute"/>
+          <parameter key="41" value="attribute_42.true.real.attribute"/>
+          <parameter key="42" value="attribute_43.true.real.attribute"/>
+          <parameter key="43" value="attribute_44.true.real.attribute"/>
+          <parameter key="44" value="attribute_45.true.real.attribute"/>
+          <parameter key="45" value="attribute_46.true.real.attribute"/>
+          <parameter key="46" value="attribute_47.true.real.attribute"/>
+          <parameter key="47" value="attribute_48.true.real.attribute"/>
+          <parameter key="48" value="attribute_49.true.real.attribute"/>
+          <parameter key="49" value="attribute_50.true.real.attribute"/>
+          <parameter key="50" value="attribute_51.true.real.attribute"/>
+          <parameter key="51" value="attribute_52.true.real.attribute"/>
+          <parameter key="52" value="attribute_53.true.real.attribute"/>
+          <parameter key="53" value="attribute_54.true.real.attribute"/>
+          <parameter key="54" value="attribute_55.true.real.attribute"/>
+          <parameter key="55" value="attribute_56.true.real.attribute"/>
+          <parameter key="56" value="attribute_57.true.real.attribute"/>
+          <parameter key="57" value="attribute_58.true.real.attribute"/>
+          <parameter key="58" value="attribute_59.true.real.attribute"/>
+          <parameter key="59" value="attribute_60.true.real.attribute"/>
+          <parameter key="60" value="class.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.3.001" expanded="true" height="68" name="Read CSV (4)" width="90" x="45" y="340">
+        <parameter key="csv_file" value="C:\Users\zhewar\Desktop\fold4.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="attribute_1.true.real.attribute"/>
+          <parameter key="1" value="attribute_2.true.real.attribute"/>
+          <parameter key="2" value="attribute_3.true.real.attribute"/>
+          <parameter key="3" value="attribute_4.true.real.attribute"/>
+          <parameter key="4" value="attribute_5.true.real.attribute"/>
+          <parameter key="5" value="attribute_6.true.real.attribute"/>
+          <parameter key="6" value="attribute_7.true.real.attribute"/>
+          <parameter key="7" value="attribute_8.true.real.attribute"/>
+          <parameter key="8" value="attribute_9.true.real.attribute"/>
+          <parameter key="9" value="attribute_10.true.real.attribute"/>
+          <parameter key="10" value="attribute_11.true.real.attribute"/>
+          <parameter key="11" value="attribute_12.true.real.attribute"/>
+          <parameter key="12" value="attribute_13.true.real.attribute"/>
+          <parameter key="13" value="attribute_14.true.real.attribute"/>
+          <parameter key="14" value="attribute_15.true.real.attribute"/>
+          <parameter key="15" value="attribute_16.true.real.attribute"/>
+          <parameter key="16" value="attribute_17.true.real.attribute"/>
+          <parameter key="17" value="attribute_18.true.real.attribute"/>
+          <parameter key="18" value="attribute_19.true.real.attribute"/>
+          <parameter key="19" value="attribute_20.true.real.attribute"/>
+          <parameter key="20" value="attribute_21.true.real.attribute"/>
+          <parameter key="21" value="attribute_22.true.real.attribute"/>
+          <parameter key="22" value="attribute_23.true.real.attribute"/>
+          <parameter key="23" value="attribute_24.true.real.attribute"/>
+          <parameter key="24" value="attribute_25.true.real.attribute"/>
+          <parameter key="25" value="attribute_26.true.real.attribute"/>
+          <parameter key="26" value="attribute_27.true.real.attribute"/>
+          <parameter key="27" value="attribute_28.true.real.attribute"/>
+          <parameter key="28" value="attribute_29.true.real.attribute"/>
+          <parameter key="29" value="attribute_30.true.real.attribute"/>
+          <parameter key="30" value="attribute_31.true.real.attribute"/>
+          <parameter key="31" value="attribute_32.true.real.attribute"/>
+          <parameter key="32" value="attribute_33.true.real.attribute"/>
+          <parameter key="33" value="attribute_34.true.real.attribute"/>
+          <parameter key="34" value="attribute_35.true.real.attribute"/>
+          <parameter key="35" value="attribute_36.true.real.attribute"/>
+          <parameter key="36" value="attribute_37.true.real.attribute"/>
+          <parameter key="37" value="attribute_38.true.real.attribute"/>
+          <parameter key="38" value="attribute_39.true.real.attribute"/>
+          <parameter key="39" value="attribute_40.true.real.attribute"/>
+          <parameter key="40" value="attribute_41.true.real.attribute"/>
+          <parameter key="41" value="attribute_42.true.real.attribute"/>
+          <parameter key="42" value="attribute_43.true.real.attribute"/>
+          <parameter key="43" value="attribute_44.true.real.attribute"/>
+          <parameter key="44" value="attribute_45.true.real.attribute"/>
+          <parameter key="45" value="attribute_46.true.real.attribute"/>
+          <parameter key="46" value="attribute_47.true.real.attribute"/>
+          <parameter key="47" value="attribute_48.true.real.attribute"/>
+          <parameter key="48" value="attribute_49.true.real.attribute"/>
+          <parameter key="49" value="attribute_50.true.real.attribute"/>
+          <parameter key="50" value="attribute_51.true.real.attribute"/>
+          <parameter key="51" value="attribute_52.true.real.attribute"/>
+          <parameter key="52" value="attribute_53.true.real.attribute"/>
+          <parameter key="53" value="attribute_54.true.real.attribute"/>
+          <parameter key="54" value="attribute_55.true.real.attribute"/>
+          <parameter key="55" value="attribute_56.true.real.attribute"/>
+          <parameter key="56" value="attribute_57.true.real.attribute"/>
+          <parameter key="57" value="attribute_58.true.real.attribute"/>
+          <parameter key="58" value="attribute_59.true.real.attribute"/>
+          <parameter key="59" value="attribute_60.true.real.attribute"/>
+          <parameter key="60" value="class.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.3.001" expanded="true" height="68" name="Read CSV (5)" width="90" x="45" y="442">
+        <parameter key="csv_file" value="C:\Users\zhewar\Desktop\fold5.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="attribute_1.true.real.attribute"/>
+          <parameter key="1" value="attribute_2.true.real.attribute"/>
+          <parameter key="2" value="attribute_3.true.real.attribute"/>
+          <parameter key="3" value="attribute_4.true.real.attribute"/>
+          <parameter key="4" value="attribute_5.true.real.attribute"/>
+          <parameter key="5" value="attribute_6.true.real.attribute"/>
+          <parameter key="6" value="attribute_7.true.real.attribute"/>
+          <parameter key="7" value="attribute_8.true.real.attribute"/>
+          <parameter key="8" value="attribute_9.true.real.attribute"/>
+          <parameter key="9" value="attribute_10.true.real.attribute"/>
+          <parameter key="10" value="attribute_11.true.real.attribute"/>
+          <parameter key="11" value="attribute_12.true.real.attribute"/>
+          <parameter key="12" value="attribute_13.true.real.attribute"/>
+          <parameter key="13" value="attribute_14.true.real.attribute"/>
+          <parameter key="14" value="attribute_15.true.real.attribute"/>
+          <parameter key="15" value="attribute_16.true.real.attribute"/>
+          <parameter key="16" value="attribute_17.true.real.attribute"/>
+          <parameter key="17" value="attribute_18.true.real.attribute"/>
+          <parameter key="18" value="attribute_19.true.real.attribute"/>
+          <parameter key="19" value="attribute_20.true.real.attribute"/>
+          <parameter key="20" value="attribute_21.true.real.attribute"/>
+          <parameter key="21" value="attribute_22.true.real.attribute"/>
+          <parameter key="22" value="attribute_23.true.real.attribute"/>
+          <parameter key="23" value="attribute_24.true.real.attribute"/>
+          <parameter key="24" value="attribute_25.true.real.attribute"/>
+          <parameter key="25" value="attribute_26.true.real.attribute"/>
+          <parameter key="26" value="attribute_27.true.real.attribute"/>
+          <parameter key="27" value="attribute_28.true.real.attribute"/>
+          <parameter key="28" value="attribute_29.true.real.attribute"/>
+          <parameter key="29" value="attribute_30.true.real.attribute"/>
+          <parameter key="30" value="attribute_31.true.real.attribute"/>
+          <parameter key="31" value="attribute_32.true.real.attribute"/>
+          <parameter key="32" value="attribute_33.true.real.attribute"/>
+          <parameter key="33" value="attribute_34.true.real.attribute"/>
+          <parameter key="34" value="attribute_35.true.real.attribute"/>
+          <parameter key="35" value="attribute_36.true.real.attribute"/>
+          <parameter key="36" value="attribute_37.true.real.attribute"/>
+          <parameter key="37" value="attribute_38.true.real.attribute"/>
+          <parameter key="38" value="attribute_39.true.real.attribute"/>
+          <parameter key="39" value="attribute_40.true.real.attribute"/>
+          <parameter key="40" value="attribute_41.true.real.attribute"/>
+          <parameter key="41" value="attribute_42.true.real.attribute"/>
+          <parameter key="42" value="attribute_43.true.real.attribute"/>
+          <parameter key="43" value="attribute_44.true.real.attribute"/>
+          <parameter key="44" value="attribute_45.true.real.attribute"/>
+          <parameter key="45" value="attribute_46.true.real.attribute"/>
+          <parameter key="46" value="attribute_47.true.real.attribute"/>
+          <parameter key="47" value="attribute_48.true.real.attribute"/>
+          <parameter key="48" value="attribute_49.true.real.attribute"/>
+          <parameter key="49" value="attribute_50.true.real.attribute"/>
+          <parameter key="50" value="attribute_51.true.real.attribute"/>
+          <parameter key="51" value="attribute_52.true.real.attribute"/>
+          <parameter key="52" value="attribute_53.true.real.attribute"/>
+          <parameter key="53" value="attribute_54.true.real.attribute"/>
+          <parameter key="54" value="attribute_55.true.real.attribute"/>
+          <parameter key="55" value="attribute_56.true.real.attribute"/>
+          <parameter key="56" value="attribute_57.true.real.attribute"/>
+          <parameter key="57" value="attribute_58.true.real.attribute"/>
+          <parameter key="58" value="attribute_59.true.real.attribute"/>
+          <parameter key="59" value="attribute_60.true.real.attribute"/>
+          <parameter key="60" value="class.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="append" compatibility="10.3.001" expanded="true" height="145" name="Append" width="90" x="246" y="136">
+        <parameter key="datamanagement" value="double_array"/>
+        <parameter key="data_management" value="auto"/>
+        <parameter key="merge_type" value="all"/>
+      </operator>
+      <operator activated="true" class="blending:set_role" compatibility="10.3.001" expanded="true" height="82" name="Set Role" width="90" x="380" y="136">
+        <list key="set_roles">
+          <parameter key="class" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="naive_bayes" compatibility="10.3.001" expanded="true" height="82" name="Naive Bayes" width="90" x="514" y="136">
+        <parameter key="laplace_correction" value="true"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.3.001" expanded="true" height="82" name="Apply Model" width="90" x="648" y="136">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.3.001" expanded="true" height="82" name="Performance" width="90" x="782" y="187">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Set Role (2)" to_port="example set input"/>
+      <connect from_op="Set Role (2)" from_port="example set output" to_op="Apply Model" to_port="unlabelled data"/>
+      <connect from_op="Read CSV (2)" from_port="output" to_op="Append" to_port="example set 1"/>
+      <connect from_op="Read CSV (3)" from_port="output" to_op="Append" to_port="example set 2"/>
+      <connect from_op="Read CSV (4)" from_port="output" to_op="Append" to_port="example set 3"/>
+      <connect from_op="Read CSV (5)" from_port="output" to_op="Append" to_port="example set 4"/>
+      <connect from_op="Append" from_port="merged set" to_op="Set Role" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Naive Bayes" to_port="training set"/>
+      <connect from_op="Naive Bayes" from_port="model" to_op="Apply Model" to_port="model"/>
+      <connect from_op="Apply Model" from_port="labelled data" to_op="Performance" to_port="labelled data"/>
+      <connect from_op="Performance" from_port="performance" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
